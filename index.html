@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Ruang Seduh — Kafe & Kopi Lampung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrap"><a class="logo" href="#">Ruang Trio BRI</a>
+            <nav><a href="#menu">Menu</a><a href="#tentang">Tentang</a><a href="#kunjungi">Kunjungi</a></nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="wrap">
+                <div>
+                    <h1 id="hero-title">Kopi Ngawi, diseduh pelan-pelan.</h1>
+                    <p id="hero-sub"></p>
+                    <a class="btn" href="#menu">Lihat menu</a><a class="btn alt" href="#kunjungi">Cara ke sini</a>
+                </div>
+                <div class="cup" aria-hidden="true">
+                    <div class="steam"><i></i><i></i><i></i></div>
+                    <div class="handle"></div>
+                    <div class="body"></div>
+                    <div class="saucer"></div>
+                </div>
+            </div>
+        </div>
+
+        <section id="menu">
+            <div class="wrap">
+                <h2>Menu</h2>
+                <p class="lead">Beli mas, lalu kirim lewat WA aja.</p>
+                <div class="tabs" id="tabs" role="group" aria-label="Kategori menu"></div>
+                <div class="layout">
+                    <div class="items" id="items"></div>
+                    <aside class="order" aria-live="polite">
+                        <h3>Pesananmu</h3>
+                        <ul id="cart"></ul>
+                        <div class="total"><span>Total</span><span id="total">Rp0</span></div><a class="btn" id="wa"
+                            href="#" target="_blank" rel="noopener">Kirim ke WhatsApp</a>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="tentang">
+            <div class="wrap">
+                <h2>Tentang kami</h2>
+                <p class="lead" id="about"></p>
+            </div>
+        </section>
+
+        <section id="kunjungi">
+            <div class="wrap">
+                <h2>Kunjungi kami</h2>
+                <div class="info" id="info"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrap" id="foot"></div>
+    </footer>
+<div class="popup" id="popup" hidden>
+  <div class="popup-card" role="dialog" aria-modal="true" aria-labelledby="pop-name">
+    <button class="popup-close" id="pop-close" aria-label="Tutup">×</button>
+    <img id="pop-img" alt="">
+    <h3 id="pop-name"></h3>
+    <p id="pop-desc"></p>
+    <strong id="pop-price"></strong>
+    <button class="btn" id="pop-add">Tambah ke pesanan</button>
+  </div>
+</div>
+<div class="preview" id="preview" aria-hidden="true">
+  <img id="pv-img" alt="">
+  <strong id="pv-name"></strong>
+  <span id="pv-desc"></span>
+  <b id="pv-price"></b>
+</div>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
