@@ -70,7 +70,7 @@ const MENU = [
     name:"Dimsum Mentai", 
     desc:"Mentainya gurih, enak, mantap, kenapa hebat.", 
     price:20000, 
-    img:"img/dimsum mentai.jpeg"
+    img:"img/dimsum_mentai.jpg"
   },
   {
     cat:"Makanan", 
